@@ -3,7 +3,7 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(1080, 720), "Halvorsen Attractor");
-    // window.setFramerateLimit(120);
+    window.setFramerateLimit(120);
 
     HalvorsenSystem halvorsen;
 
