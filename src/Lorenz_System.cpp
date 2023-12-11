@@ -25,7 +25,7 @@ void LorenzSystem::update(const float &dt)
 sf::Vector3f LorenzSystem::pointScaling() const
 {
     float xFinal = scale * x;
-    float yFinal = scale * (y - 1.5);
+    float yFinal = scale * y;
     float zFinal = scale * z;
 
     return sf::Vector3f(xFinal, yFinal, zFinal);

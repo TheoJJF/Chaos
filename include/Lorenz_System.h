@@ -22,7 +22,7 @@ class LorenzSystem
         float x, y, z;
         float sigma, rho, beta;
 
-        const float scale = 12.5;
+        const float scale = 11.25;
 
         std::vector<sf::Vector3f> points;
 };
