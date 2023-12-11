@@ -2,8 +2,8 @@
 
 LorenzSystem::LorenzSystem()
 {
-    x = 0.000001; y = z = 0.0;
-    sigma = 10.0; rho = 28.0; beta = 8.0 / 3.0;
+    x = 0.000001, y = z = 0.0;
+    sigma = 10.0, rho = 28.0, beta = 8.0 / 3.0;
 }
 
 LorenzSystem::~LorenzSystem() { }
