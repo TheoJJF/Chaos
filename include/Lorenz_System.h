@@ -1,8 +1,6 @@
 #ifndef LORENZ_SYSTEM_H
 #define LORENZ_SYSTEM_H
 
-#define _USE_MATH_DEFINES
-
 #include <SFML/Graphics.hpp>
 #include <vector>
 
