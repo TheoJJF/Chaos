@@ -22,7 +22,7 @@ class HalvorsenSystem
         float a; 
 
         const float scale = 20.0;
-        const float cameraAngle = M_PI_4;
+        const float cameraAngle1 = M_PI_4 / 1.5, cameraAngle2 = M_PI_4 / 1.15;
 
         std::vector<sf::Vector3f> points;
 };
