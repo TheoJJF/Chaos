@@ -5,7 +5,6 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
-#include <cmath>
 
 class LorenzSystem
 {
