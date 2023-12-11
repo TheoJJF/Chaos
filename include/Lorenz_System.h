@@ -1,5 +1,5 @@
-#ifndef LORENZ_SYSTEM
-#define LORENZ_SYSTEM
+#ifndef LORENZ_SYSTEM_H
+#define LORENZ_SYSTEM_H
 
 #define _USE_MATH_DEFINES
 
