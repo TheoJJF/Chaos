@@ -24,13 +24,9 @@ void HalvorsenSystem::update(const float &dt)
 
 sf::Vector3f HalvorsenSystem::pointScaling() const
 {
-    // Around y-axis
     float xModified = x * std::cos(cameraAngle1) - z * std::sin(cameraAngle1);
-    float zModified = z * std::cos(cameraAngle1) - x * std::sin(cameraAngle1);
-
-    // Around x-axis
     float yModified = y * std::cos(cameraAngle2) - z * std::sin(cameraAngle2);
-    zModified = y * std::sin(cameraAngle2) + z * std::cos(cameraAngle2);
+    float zModified = y * std::sin(cameraAngle2) + z * std::cos(cameraAngle2);
 
 
 
