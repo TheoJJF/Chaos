@@ -31,7 +31,7 @@ int main()
             sf::Vector3f point = lorenz.returnPointsVector().at(i);
 
             line[i].position = sf::Vector2f(point.x, point.y) + window.getView().getCenter();
-            line[i].color = sf::Color(255, 215, 115, 150);
+            line[i].color = sf::Color(253, 220, 92, 150);
         }
         
         window.draw(line);
