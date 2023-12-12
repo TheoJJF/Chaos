@@ -17,7 +17,9 @@ For installation and documentations, please visit the [SFML website](https://www
 
 ### System
 $$\dfrac{dx}{dt}=\sigma(-x+y)$$
+
 $$\dfrac{dy}{dt}=-xz+\rho x-y$$
+
 $$\dfrac{dz}{dt}=xy-\beta z$$
 
 
@@ -32,7 +34,9 @@ $$\sigma=10,\rho=28,\beta=\dfrac{8}{3}$$
 
 ### System
 $$\dfrac{dx}{dt}=-ax-4y-4z-y^2$$
+
 $$\dfrac{dy}{dt}=-ay-4z-4x-z^2$$
+
 $$\dfrac{dz}{dt}=-az-4x-4y-x^2$$
 
 
