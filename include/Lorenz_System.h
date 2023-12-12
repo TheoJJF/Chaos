@@ -1,8 +1,11 @@
 #ifndef LORENZ_SYSTEM_H
 #define LORENZ_SYSTEM_H
 
+#define _USE_MATH_DEFINE
+
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include <cmath>
 
 class LorenzSystem
 {
@@ -20,6 +23,7 @@ class LorenzSystem
         float sigma, rho, beta;
 
         const float scale = 11.25;
+        const float cameraAngle1 = M_PI_2;
 
         std::vector<sf::Vector3f> points;
 };

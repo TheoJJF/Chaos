@@ -24,9 +24,13 @@ void LorenzSystem::update(const float &dt)
 
 sf::Vector3f LorenzSystem::pointScaling() const
 {
+    // Rotate around x-axis
+    float yModified = y * std::cos(cameraAngle1) - z * std::sin(cameraAngle1);
+    float zModified = y * std::sin(cameraAngle1) + z * std::cos(cameraAngle1);
+
     float xFinal = scale * x;
-    float yFinal = scale * y;
-    float zFinal = scale * z;
+    float yFinal = scale * (yModified + 27.5);
+    float zFinal = scale * zModified;
 
     return sf::Vector3f(xFinal, yFinal, zFinal);
 }
