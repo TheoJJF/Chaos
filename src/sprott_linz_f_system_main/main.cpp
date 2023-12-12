@@ -3,7 +3,8 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(1080, 720), "Sprott-Linz F Attractor");
-    // window.setFramerateLimit(120);
+    //Framerate Limit can be omitted :D
+    window.setFramerateLimit(750);
 
     SprottLinzFSystem sprott_linz;
 
