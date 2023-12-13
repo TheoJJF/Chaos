@@ -45,7 +45,7 @@ $$\dfrac{dy}{dt}=-ay-4z-4x-z^2$$
 $$\dfrac{dz}{dt}=-az-4x-4y-x^2$$
 
 
-<center> <h3>Parameters</h3> </center>
+<h3 style="text-align: center">Parameters</h3>
 
 $$a=1.4$$
 
