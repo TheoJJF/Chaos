@@ -1,4 +1,4 @@
-# Chaotic-Dynamical-Systems
+# Chaos
 This repository contains a collection of simulations of chaotic attractors, written in C++ and Simple and Fast Multimedia Library(SFML).
 
 ## Getting Started
