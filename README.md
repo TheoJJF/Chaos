@@ -11,7 +11,9 @@ git clone https://github.com/TheoJJF/Chaotic-Dynamical-Systems.git
 For installation and documentations, please visit the [SFML website](https://www.sfml-dev.org/).
 
 ## Chaotic Attractors
-<center> <h3>Lorenz Attractor</h3> </center>
+<div align="center">
+    <h3>Lorenz Attractor</h3> 
+</div>
 <p align="center">
     <img src="assets/lorenz.png">
 </p>
