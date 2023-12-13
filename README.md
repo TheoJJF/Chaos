@@ -18,7 +18,9 @@ For installation and documentations, please visit the [SFML website](https://www
     <img src="assets/lorenz.png">
 </p>
 
-<center> <h3>System</h3> </center>
+<div align="center">
+    <h3>System</h3> 
+</div>
 
 $$\dfrac{dx}{dt}=\sigma(-x+y)$$
 
@@ -27,18 +29,24 @@ $$\dfrac{dy}{dt}=-xz+\rho x-y$$
 $$\dfrac{dz}{dt}=xy-\beta z$$
 
 
-<center> <h3>Parameters</h3> </center>
+<div align="center">
+    <h3>Parameters</h3> 
+</div>
 
 $$\sigma=10,\rho=28,\beta=\dfrac{8}{3}$$
 
 <br>
-<center> <h3>Halvorsen Attractor</h3> </center>
+<div align="center">
+    <h3>Halvorsen Attractor</h3> 
+</div>
 
 <p align="center">
     <img src="assets/halvorsen.png">
 </p>
 
-<center> <h3>System</h3> </center>
+<div align="center">
+    <h3>System</h3> 
+</div>
 
 $$\dfrac{dx}{dt}=-ax-4y-4z-y^2$$
 
@@ -47,7 +55,9 @@ $$\dfrac{dy}{dt}=-ay-4z-4x-z^2$$
 $$\dfrac{dz}{dt}=-az-4x-4y-x^2$$
 
 
-<h3 style="text-align: center">Parameters</h3>
+<div align="center">
+    <h3>Parameters</h3> 
+</div>
 
 $$a=1.4$$
 
