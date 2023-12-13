@@ -4,7 +4,7 @@ This repository contains a collection of simulations of chaotic attractors, writ
 ## Getting Started
 ### Cloning the repository
 ```
-git clone https://github.com/TheoJJF/Chaos.git
+git clone https://github.com/TheoJJF/Chaotic-Dynamical-Systems.git
 ```
 
 ### Ensuring SFML is installed
