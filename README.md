@@ -10,7 +10,9 @@ git clone https://github.com/TheoJJF/Chaotic-Dynamical-Systems.git
 ### Ensuring SFML is installed
 For installation and documentations, please visit the [SFML website](https://www.sfml-dev.org/).
 
-## Chaotic Attractors
+<div align="center">
+    <h2>Chaotic Attractors</h2>
+</div>
 <div align="center">
     <h3>Lorenz Attractor</h3> 
 </div>
