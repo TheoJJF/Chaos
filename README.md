@@ -21,7 +21,6 @@ cmake --build build
 ```
 
 ### Running the executable
-Also using the command line:
 ```
 ./build/bin/chaos_exe
 ```
