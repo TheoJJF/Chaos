@@ -15,6 +15,7 @@ add_executable(chaos_exe
     src/Chaotic_Dynamical_Systems.cpp
     src/Halvorsen_System.cpp
     src/Lorenz_System.cpp
+    src/Thomas_System.cpp
 )
 target_link_libraries(chaos_exe PRIVATE sfml-graphics)
 target_compile_features(chaos_exe PRIVATE cxx_std_17)
