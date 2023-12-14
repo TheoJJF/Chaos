@@ -6,7 +6,7 @@ HalvorsenSystem::HalvorsenSystem()
     a = 1.4;
 
     scale = 20.0;
-    theta1 = M_PI_4 / 1.5, theta2 = M_PI_4;
+    theta1 = M_PI_4 / 1.25, theta2 = M_PI_4;
 }
 
 HalvorsenSystem::~HalvorsenSystem() { }
@@ -27,13 +27,13 @@ void HalvorsenSystem::update(const float &dt)
 
 sf::Vector3f HalvorsenSystem::pointScaling() const
 {
-    float xModified = x * std::cos(theta1) - z * std::sin(theta1);
+    float xModified = x * std::cos(theta1) - y * std::sin(theta1);
     float yModified = y * std::cos(theta2) - z * std::sin(theta2);
     float zModified = y * std::sin(theta2) + z * std::cos(theta2);
 
-    float xFinal = scale * (xModified + 2.125);
+    float xFinal = scale * xModified + 2.125;
     float yFinal = scale * yModified;
-    float zFinal = scale * zModified / 1.1125;
+    float zFinal = scale * zModified;
 
     return sf::Vector3f(xFinal, yFinal, zFinal);
 }
