@@ -1,5 +1,6 @@
 #include "../include/Lorenz_System.h"
 #include "../include/Halvorsen_System.h"
+#include "../include/Thomas_System.h"
 
 int main()
 {
@@ -10,9 +11,11 @@ int main()
 
     LorenzSystem lorenz;
     HalvorsenSystem halvorsen;
+    ThomasSystem thomas;
 
     bool selectedLorenz = false,
-         selectedHalvorsen = false;
+         selectedHalvorsen = false,
+         selectedThomas = false;
 
     while (window.isOpen())
     {
@@ -46,10 +49,20 @@ int main()
                         }
                         case sf::Keyboard::Num2:
                         {
-                            selectedHalvorsen = true;
+                            selectedThomas = true;
                             break;
                         }
                         case sf::Keyboard::Numpad2:
+                        {
+                            selectedThomas = true;
+                            break;
+                        }
+                        case sf::Keyboard::Num3:
+                        {
+                            selectedHalvorsen = true;
+                            break;
+                        }
+                        case sf::Keyboard::Numpad3:
                         {
                             selectedHalvorsen = true;
                             break;
@@ -69,11 +82,14 @@ int main()
         {
             lorenz.run(window);
         }
+        else if (selectedThomas)
+        {
+            thomas.run(window);
+        }
         else if (selectedHalvorsen)
         {
             halvorsen.run(window);
         }
-        
     }
     
     return 0;
