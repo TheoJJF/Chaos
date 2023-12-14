@@ -27,9 +27,10 @@ cmake --build build
 
 ### Basic Selections
 ```
-esc - Terminating program.
-1 - Lorenz Attractor.
-2 - Halvorsen Attractor.
+esc - Terminating program
+1 - Lorenz Attractor
+2 - Thomas Attractor
+3 - Halvorsen Attractor
 ```
 
 
@@ -38,10 +39,11 @@ esc - Terminating program.
 </div>
 <div align="center">
     <h3>Lorenz Attractor</h3> 
+    <p>
+        <img src="assets/lorenz.png">
+    </p>
 </div>
-<p align="center">
-    <img src="assets/lorenz.png">
-</p>
+
 
 <div align="center">
     <h3>System</h3> 
@@ -62,12 +64,35 @@ $$\sigma=10,\rho=28,\beta=\dfrac{8}{3}$$
 
 <br>
 <div align="center">
-    <h3>Halvorsen Attractor</h3> 
+    <h3>Thomas Attractor</h3>
+    <p>
+        <img src="assets/thomas.png">
+    </p>
 </div>
 
-<p align="center">
-    <img src="assets/halvorsen.png">
-</p>
+<div align="center">
+    <h3>System</h3> 
+</div>
+
+$$\dfrac{dx}{dt}=sin(y)-bx$$
+
+$$\dfrac{dy}{dt}=sin(z)-by$$
+
+$$\dfrac{dz}{dt}=sin(x)-bz$$
+
+<div align="center">
+    <h3>Parameters</h3> 
+</div>
+
+$$b=0.19$$
+
+<br>
+<div align="center">
+    <h3>Halvorsen Attractor</h3> 
+    <p>
+        <img src="assets/halvorsen.png">
+    </p>
+</div>
 
 <div align="center">
     <h3>System</h3> 
