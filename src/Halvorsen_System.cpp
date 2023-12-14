@@ -4,6 +4,9 @@ HalvorsenSystem::HalvorsenSystem()
 {
     x = 0.1, y = z = 0.0;
     a = 1.4;
+
+    scale = 20.0;
+    theta1 = M_PI_4 / 1.5, theta2 = M_PI_4;
 }
 
 HalvorsenSystem::~HalvorsenSystem() { }
@@ -24,20 +27,13 @@ void HalvorsenSystem::update(const float &dt)
 
 sf::Vector3f HalvorsenSystem::pointScaling() const
 {
-    float xModified = x * std::cos(cameraAngle1) - z * std::sin(cameraAngle1);
-    float yModified = y * std::cos(cameraAngle2) - z * std::sin(cameraAngle2);
-    float zModified = y * std::sin(cameraAngle2) + z * std::cos(cameraAngle2);
-
-
+    float xModified = x * std::cos(theta1) - z * std::sin(theta1);
+    float yModified = y * std::cos(theta2) - z * std::sin(theta2);
+    float zModified = y * std::sin(theta2) + z * std::cos(theta2);
 
     float xFinal = scale * (xModified + 2.125);
     float yFinal = scale * yModified;
     float zFinal = scale * zModified / 1.1125;
 
     return sf::Vector3f(xFinal, yFinal, zFinal);
-}
-
-const std::vector<sf::Vector3f> &HalvorsenSystem::returnPointsVector() const
-{
-    return points;
 }

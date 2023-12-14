@@ -4,6 +4,9 @@ SprottLinzFSystem::SprottLinzFSystem()
 {
     x = 0.1, y = z = 0;
     a = 0.5;
+
+    scale = 120.0;
+    theta1 = theta2 = M_PI;
 }
 
 SprottLinzFSystem::~SprottLinzFSystem() { }
@@ -24,18 +27,12 @@ void SprottLinzFSystem::update(const float &dt)
 
 sf::Vector3f SprottLinzFSystem::pointScaling() const
 {
-    // Across Y-axis
-    float xModified = x * std::cos(cameraAngle) + z * std::sin(cameraAngle);
-    float zModified = z * std::cos(cameraAngle) + x * std::sin(cameraAngle);
+    float xModified = x * std::cos(theta1) + z * std::sin(theta1);
+    float zModified = z * std::cos(theta1) + x * std::sin(theta1);
 
     float xFinal = scale * (xModified - 0.5);
     float yFinal = scale * (y + 1.875);
     float zFinal = scale * zModified;
 
     return sf::Vector3f(xFinal, yFinal, zFinal);
-}
-
-const std::vector<sf::Vector3f> &SprottLinzFSystem::returnPointsVector() const
-{
-    return points;
 }

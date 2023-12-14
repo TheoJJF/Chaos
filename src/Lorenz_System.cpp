@@ -4,6 +4,9 @@ LorenzSystem::LorenzSystem()
 {
     x = 0.000001, y = z = 0.0;
     sigma = 10.0, rho = 28.0, beta = 8.0 / 3.0;
+
+    scale = 11.25;
+    theta1 = theta2 = M_PI_2;
 }
 
 LorenzSystem::~LorenzSystem() { }
@@ -24,18 +27,12 @@ void LorenzSystem::update(const float &dt)
 
 sf::Vector3f LorenzSystem::pointScaling() const
 {
-    // Rotate around x-axis
-    float yModified = y * std::cos(cameraAngle1) - z * std::sin(cameraAngle1);
-    float zModified = y * std::sin(cameraAngle1) + z * std::cos(cameraAngle1);
+    float yModified = y * std::cos(theta1) - z * std::sin(theta1);
+    float zModified = y * std::sin(theta1) + z * std::cos(theta1);
 
     float xFinal = scale * x;
     float yFinal = scale * (yModified + 27.5);
     float zFinal = scale * zModified;
 
     return sf::Vector3f(xFinal, yFinal, zFinal);
-}
-
-const std::vector<sf::Vector3f> &LorenzSystem::returnPointsVector() const
-{
-    return points;
 }

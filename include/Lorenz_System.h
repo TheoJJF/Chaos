@@ -1,31 +1,20 @@
 #ifndef LORENZ_SYSTEM_H
 #define LORENZ_SYSTEM_H
 
-#define _USE_MATH_DEFINE
+#include "Chaotic_Dynamical_Systems.h"
 
-#include <SFML/Graphics.hpp>
-#include <vector>
-#include <cmath>
-
-class LorenzSystem
+class LorenzSystem : public ChaoticDynamicalSystems
 {
     public:
         LorenzSystem();
         ~LorenzSystem();
 
-        void update(const float &dt);
-        sf::Vector3f pointScaling() const;
-        const std::vector<sf::Vector3f> &returnPointsVector() const;
+        void update(const float &dt) override;
+        sf::Vector3f pointScaling() const override;
 
 
     private:
-        float x, y, z;
         float sigma, rho, beta;
-
-        const float scale = 11.25;
-        const float cameraAngle1 = M_PI_2;
-
-        std::vector<sf::Vector3f> points;
 };
 
 #endif
