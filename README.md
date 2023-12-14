@@ -10,6 +10,30 @@ git clone https://github.com/TheoJJF/Chaos.git
 ### Ensuring SFML is installed
 For installation and documentations, please visit the [SFML website](https://www.sfml-dev.org/).
 
+### Ensuring CMake is installed
+For installation and documentations, please visit the [CMake website](https://cmake.org/).
+
+### Building with CMake
+Using the command line:
+```
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+```
+
+### Running the executable
+Also using the command line:
+```
+./build/bin/chaos_exe
+```
+
+## Basic Selections
+```
+esc - Terminating program.
+1 - Lorenz Attractor.
+2 - Halvorsen Attractor.
+```
+
+
 <div align="center">
     <h2>Chaotic Attractors</h2>
 </div>
