@@ -37,3 +37,23 @@ sf::Vector3f HalvorsenSystem::pointScaling() const
 
     return sf::Vector3f(xFinal, yFinal, zFinal);
 }
+
+void HalvorsenSystem::run(sf::RenderWindow &window)
+{
+    this->update(0.005);
+    window.clear(sf::Color::Black);
+
+    sf::VertexArray line(sf::LineStrip);
+    line.resize(this->returnPointsVector().size());
+
+    for (size_t i = 0; i < this->returnPointsVector().size(); i++)
+    {
+        sf::Vector3f point = this->returnPointsVector().at(i);
+
+        line[i].position = sf::Vector2f(point.x, point.y) + window.getView().getCenter();
+        line[i].color = sf::Color(255, 185, 180, 100);
+    }
+        
+    window.draw(line);
+    window.display();
+}

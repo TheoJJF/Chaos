@@ -9,9 +9,9 @@ class LorenzSystem : public ChaoticDynamicalSystems
         LorenzSystem();
         ~LorenzSystem();
 
+        void run(sf::RenderWindow &window) override;
         void update(const float &dt) override;
         sf::Vector3f pointScaling() const override;
-
 
     private:
         float sigma, rho, beta;

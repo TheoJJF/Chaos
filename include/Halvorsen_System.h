@@ -9,6 +9,7 @@ class HalvorsenSystem : public ChaoticDynamicalSystems
         HalvorsenSystem();
         ~HalvorsenSystem();
 
+        void run(sf::RenderWindow &window) override;
         void update(const float &dt) override;
         sf::Vector3f pointScaling() const override;
 

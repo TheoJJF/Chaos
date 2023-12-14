@@ -1,0 +1,80 @@
+#include "../include/Lorenz_System.h"
+#include "../include/Halvorsen_System.h"
+
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Chaos - TheoJJF");
+    window.setFramerateLimit(120);
+
+    sf::Event systemInitializationChoice;
+
+    LorenzSystem lorenz;
+    HalvorsenSystem halvorsen;
+
+    bool selectedLorenz = false,
+         selectedHalvorsen = false;
+
+    while (window.isOpen())
+    {
+        while (window.pollEvent(systemInitializationChoice))
+        {
+            switch (systemInitializationChoice.type)
+            {
+                case sf::Event::Closed:
+                {
+                    window.close();
+                    break;
+                }
+                case sf::Event::KeyPressed:
+                {
+                    switch (systemInitializationChoice.key.code)
+                    {
+                        case sf::Keyboard::Escape:
+                        {
+                            window.close();
+                            break;
+                        }
+                        case sf::Keyboard::Num1:
+                        {
+                            selectedLorenz = true;
+                            break;
+                        }
+                        case sf::Keyboard::Numpad1:
+                        {
+                            selectedLorenz = true;
+                            break;
+                        }
+                        case sf::Keyboard::Num2:
+                        {
+                            selectedHalvorsen = true;
+                            break;
+                        }
+                        case sf::Keyboard::Numpad2:
+                        {
+                            selectedHalvorsen = true;
+                            break;
+                        }
+
+                        default:
+                            break;
+                    }
+                }
+            
+                default:
+                    break;
+            }
+        }
+        
+        if (selectedLorenz)
+        {
+            lorenz.run(window);
+        }
+        else if (selectedHalvorsen)
+        {
+            halvorsen.run(window);
+        }
+        
+    }
+    
+    return 0;
+}
