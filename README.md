@@ -26,7 +26,7 @@ Also using the command line:
 ./build/bin/chaos_exe
 ```
 
-## Basic Selections
+### Basic Selections
 ```
 esc - Terminating program.
 1 - Lorenz Attractor.
