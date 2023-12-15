@@ -30,7 +30,6 @@ cmake --build build
 esc - Terminating program
 1 - Lorenz Attractor
 2 - Thomas Attractor
-3 - Halvorsen Attractor
 ```
 
 
@@ -86,28 +85,4 @@ $$\dfrac{dz}{dt}=sin(x)-bz$$
 
 $$b=0.19$$
 
-<br>
-<div align="center">
-    <h3>Halvorsen Attractor</h3> 
-    <p>
-        <img src="assets/halvorsen.png">
-    </p>
-</div>
-
-<div align="center">
-    <h3>System</h3> 
-</div>
-
-$$\dfrac{dx}{dt}=-ax-4y-4z-y^2$$
-
-$$\dfrac{dy}{dt}=-ay-4z-4x-z^2$$
-
-$$\dfrac{dz}{dt}=-az-4x-4y-x^2$$
-
-
-<div align="center">
-    <h3>Parameters</h3> 
-</div>
-
-$$a=1.4$$
 
