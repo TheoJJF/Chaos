@@ -13,7 +13,6 @@ FetchContent_MakeAvailable(SFML)
 add_executable(chaos_exe 
     src/main.cpp
     src/Chaotic_Dynamical_Systems.cpp
-    src/Halvorsen_System.cpp
     src/Lorenz_System.cpp
     src/Thomas_System.cpp
 )
