@@ -57,16 +57,6 @@ int main()
                             selectedThomas = true;
                             break;
                         }
-                        case sf::Keyboard::Num3:
-                        {
-                            selectedHalvorsen = true;
-                            break;
-                        }
-                        case sf::Keyboard::Numpad3:
-                        {
-                            selectedHalvorsen = true;
-                            break;
-                        }
 
                         default:
                             break;
