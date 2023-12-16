@@ -1,5 +1,4 @@
 #include "../include/Lorenz_System.h"
-#include "../include/Halvorsen_System.h"
 #include "../include/Thomas_System.h"
 
 int main()
@@ -10,7 +9,6 @@ int main()
     sf::Event systemInitializationChoice;
 
     LorenzSystem lorenz;
-    HalvorsenSystem halvorsen;
     ThomasSystem thomas;
 
     bool selectedLorenz = false,
@@ -75,10 +73,6 @@ int main()
         else if (selectedThomas)
         {
             thomas.run(window);
-        }
-        else if (selectedHalvorsen)
-        {
-            halvorsen.run(window);
         }
     }
     

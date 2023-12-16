@@ -1,5 +1,4 @@
-#ifndef LORENZ_SYSTEM_H
-#define LORENZ_SYSTEM_H
+#pragma once
 
 #include "Chaotic_Dynamical_Systems.h"
 
@@ -16,5 +15,3 @@ class LorenzSystem : public ChaoticDynamicalSystems
     private:
         float sigma, rho, beta;
 };
-
-#endif

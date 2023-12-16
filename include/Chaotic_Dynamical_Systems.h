@@ -1,5 +1,4 @@
-#ifndef CHAOTIC_DYNAMICAL_SYSTEMS_H
-#define CHAOTIC_DYNAMICAL_SYSTEMS_H
+#pragma once
 
 #include <SFML/Graphics.hpp>
 #include <vector>
@@ -21,6 +20,3 @@ class ChaoticDynamicalSystems
         float theta1, theta2;
         std::vector<sf::Vector3f> points;
 };
-
-
-#endif

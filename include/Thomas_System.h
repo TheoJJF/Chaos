@@ -1,5 +1,4 @@
-#ifndef THOMAS_SYSTEM_H
-#define THOMAS_SYSTEM_H
+#pragma once
 
 #include "Chaotic_Dynamical_Systems.h"
 
@@ -16,5 +15,3 @@ class ThomasSystem : public ChaoticDynamicalSystems
     private:
         float b;
 };
-
-#endif
