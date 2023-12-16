@@ -17,7 +17,7 @@ add_executable(chaos_exe
     src/Thomas_System.cpp
 )
 target_link_libraries(chaos_exe PRIVATE sfml-graphics)
-target_compile_features(chaos_exe PRIVATE cxx_std_17)
+target_compile_features(chaos_exe PRIVATE cxx_std_23)
 
 if(WIN32)
     add_custom_command(
