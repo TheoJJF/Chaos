@@ -2,11 +2,6 @@
 This repository contains simulation of chaotic attractors, written in C++ and Simple and Fast Multimedia Library(SFML).
 
 ## Getting Started
-### Cloning the repository
-```
-git clone https://github.com/TheoJJF/Chaos.git
-```
-
 ### Ensuring SFML is installed
 For installation and documentations, please visit the [SFML website](https://www.sfml-dev.org/).
 
@@ -14,7 +9,6 @@ For installation and documentations, please visit the [SFML website](https://www
 For installation and documentations, please visit the [CMake website](https://cmake.org/).
 
 ### Building with CMake
-Using the command line:
 ```
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
